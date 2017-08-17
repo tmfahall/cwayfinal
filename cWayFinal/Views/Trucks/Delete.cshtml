@@ -1,0 +1,64 @@
+﻿@model cWayFinal.Models.Truck
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Truck</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckVin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckVin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDescription)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -29,5 +29,7 @@ namespace cWayFinal.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<cWayFinal.Models.Truck> Trucks { get; set; }
     }
 }

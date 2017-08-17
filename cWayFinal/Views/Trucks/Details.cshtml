@@ -1,0 +1,58 @@
+﻿@model cWayFinal.Models.Truck
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Truck</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckVin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckVin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDateAdded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDateAdded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TruckId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
